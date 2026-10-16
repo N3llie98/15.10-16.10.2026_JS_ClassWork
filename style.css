@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    background-color: white;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #ddd;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+main{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.sidebar, .main-content, footer{
+    border: 2px solid gray;
+    padding: 20px;
+}
+.sidebar{
+    min-width: 100px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    button{
+        width: 75%;
+        min-width: 90px;
+    }
+}
+.main-content{
+    min-width: 300px;
+    flex: 3;
+}
+footer{
+    background-color: #ddd;
+    margin-top: auto;
+}
+
+.dark{
+    background-color: #222;
+    color:white;
+}
+.dark header{
+    background-color: #111;
+}
+.dark nav a{
+    color:white;
+}
+.dark .sidebar, .dark .main-content, .dark footer{
+    border: 2px solid black;
+    padding: 20px;
+}
+.dark footer{
+    background-color: #111;
+}
+.dark button{
+    background-color: #111;
+    color: white;
+}
+
+.colorful{
+    background-color: cornflowerblue;
+    color:darkblue;
+}
+.colorful header{
+    background-color: crimson;
+}
+.colorful nav a{
+    color:lemonchiffon;
+}
+.colorful .sidebar, .colorful .main-content, .colorful footer{
+    border: 2px solid crimson;
+    padding: 20px;
+}
+.colorful footer{
+    background-color: crimson;
+    color: lemonchiffon;
+}
+.colorful button{
+    background-color: crimson;
+    color: lemonchiffon;
+}
